@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<body bgcolor="RED">
+<center>
+<h1><u> <marquee scrollamount="10" width =50%>Online Shopping Cart</marquee> </u></h1>
+</center>
+<script language="JavaScript">
+function validate()
+{
+if(document.frm.USERNAME.value=="" || document.frm.PASSWORD.value=="")
+   {
+   alert("Username or password cannot be left blank!!!");
+   return;
+   }
+   document.frm.action="Validate.jsp";
+   document.frm.submit();
+}
+</script>
+
+<form name = frm method="POST">
+<p align="center"><font size="5"><b> Login Form</b></font></p>
+	<TABLE ALIGN="center" height="97">
+<TR>
+
+
+<td>
+<b>USERNAME:</b>
+</td>
+<td>
+<input type="text" name="USERNAME" size="20" tabindex="1">
+</td>
+</tr>
+
+<tr>
+
+
+<td>
+<b>PASSWORD:</b>
+</td>
+<td>
+<input type="password" name="PASSWORD" size="20" tabindex="2">
+</td>
+
+<tr align="center">
+<td colspan=2>
+<input type="button" value="LOGIN" name="B1" onclick="validate();"tabindex="3">
+</td>
+</tr>
+
+<tr>
+<td> <font size="4"> New User?</font> </td>
+<td> <a href="NewUser.html"><font size="4">Register</font></a></td>
+</tr>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
